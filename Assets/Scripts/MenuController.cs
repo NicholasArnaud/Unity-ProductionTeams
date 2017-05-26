@@ -6,9 +6,18 @@ using UnityEngine.UI;
 //For Buttons on Menu
 public class MenuController : MonoBehaviour
 {
+    [HideInInspector]
     public Button theButton;
    
     private string CurrentCase;
+
+
+
+    void Start()
+    {
+        theButton = GetComponent<Button>();
+    }
+    
 
     //Actions for buttons being clicked
     public bool GetButtonInput()
