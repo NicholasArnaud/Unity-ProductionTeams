@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 215011972}
   - component: {fileID: 215011974}
   - component: {fileID: 215011973}
+  - component: {fileID: 215011975}
   m_Layer: 5
   m_Name: ButtonTestText
   m_TagString: Untagged
@@ -184,6 +185,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 215011971}
+--- !u!114 &215011975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 215011971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd99d1bdd4a49846aad182de4dedb23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theButton: {fileID: 114670613214816770, guid: 876c5d94f6b54244ab59ba4fac9248d7,
+    type: 2}
+  buttonCanvas: {fileID: 0}
+  buttonObject: {fileID: 1222673436113504, guid: 876c5d94f6b54244ab59ba4fac9248d7,
+    type: 2}
+  buttonText: {fileID: 0}
+  testText: {fileID: 215011973}
 --- !u!1 &732458600
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,11 +386,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dd99d1bdd4a49846aad182de4dedb23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theButton: {fileID: 0}
-  buttonCanvas: {fileID: 732458603}
-  buttonObject: {fileID: 1163002642832106, guid: c4dac77234516ea4db3dd9d95a4c1198,
+  theButton: {fileID: 114670613214816770, guid: 876c5d94f6b54244ab59ba4fac9248d7,
     type: 2}
-  buttonText: {fileID: 114771099067097732, guid: c4dac77234516ea4db3dd9d95a4c1198,
+  buttonCanvas: {fileID: 732458600}
+  buttonObject: {fileID: 1222673436113504, guid: 876c5d94f6b54244ab59ba4fac9248d7,
+    type: 2}
+  buttonText: {fileID: 114623658544078918, guid: 876c5d94f6b54244ab59ba4fac9248d7,
     type: 2}
   testText: {fileID: 215011973}
 --- !u!4 &856894665

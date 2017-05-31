@@ -10,7 +10,7 @@ public class MenuController : MonoBehaviour
     [HideInInspector]
     public Button theButton;
 
-    public GameObject buttonCanvas;
+    public Canvas buttonCanvas;
     public GameObject buttonObject;
     public Text buttonText;
     public Text testText;
@@ -70,43 +70,34 @@ public class MenuController : MonoBehaviour
     //Create buttons for scene
     public void CreateButtons()
     {
-        if (currentButtonPos == 0)
-        {
-            Instantiate(buttonObject).tag = "Start";
-            if (buttonObject.CompareTag("Start"))
-            {
-                buttonObject.transform.position = new Vector3(0, 0, 0);
-                buttonText.text = "Start";
-                currentButtonPos = 1;
-                CreateButtons();
-            }
-        }
-        if (currentButtonPos == 1)
-        {
-            Instantiate(buttonObject).tag = "Credits";
-            if (buttonObject.CompareTag("Credits"))
-            {
-                buttonObject.transform.position = new Vector3(100, 0, 0);
-                buttonText.text = "Credits";
-                currentButtonPos = 2;
-                CreateButtons();
-            }
-        }
-        if (currentButtonPos == 2)
-        {
-            Instantiate(buttonObject).tag = "Quit";
-            if (buttonObject.CompareTag("Quit"))
-            {
-                buttonObject.transform.position = new Vector3(-100, 0, 0);
-                buttonText.text = "Quit";
-                currentButtonPos = 3;
-            }
-        }
+        GameObject startButton;
+        startButton = Instantiate(buttonObject);
+        startButton.tag = "Start";
+        startButton.transform.SetParent(buttonCanvas.transform);
+        startButton.transform.position = new Vector3(300, 300, 0);
+        startButton.GetComponentInChildren<Text>().text = "Start";
+        startButton.name = "Start";
+
+        GameObject creditsButton;
+        creditsButton = Instantiate(buttonObject);
+        creditsButton.tag = "Credits";
+        creditsButton.transform.SetParent(buttonCanvas.transform);
+        creditsButton.transform.position = new Vector3(500, 300, 0);
+        creditsButton.GetComponentInChildren<Text>().text = "Credits";
+        creditsButton.name = "Credits";
+
+        GameObject quitButton;
+        quitButton = Instantiate(buttonObject);
+        quitButton.tag = "Quit";
+        quitButton.transform.SetParent(buttonCanvas.transform);
+        quitButton.transform.position = new Vector3(700, 300, 0);
+        quitButton.GetComponentInChildren<Text>().text = "Quit";
+        quitButton.name = "Quit";
+
     }
 
     void Start()
     {
-        currentButtonPos = 0;
         CreateButtons();
     }
 
