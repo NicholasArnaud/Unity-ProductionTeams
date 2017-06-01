@@ -8,13 +8,11 @@ public class EnemyCharacterMovement : MonoBehaviour
 {
     private NavMeshAgent agent;
     private Animator animator;
-    private Rigidbody rb;
     private readonly int SPEED = Animator.StringToHash("speed");
     public Transform target;
     private void Start()
     {
         animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody>();
         agent = GetComponent<NavMeshAgent>();
     }
 
