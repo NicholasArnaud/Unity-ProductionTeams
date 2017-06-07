@@ -147,6 +147,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114183620204780250, guid: be1fdf486e768724eab5644be672d612,
+        type: 2}
+      propertyPath: MenuCamera
+      value: 
+      objectReference: {fileID: 2051489569}
+    - target: {fileID: 114183620204780250, guid: be1fdf486e768724eab5644be672d612,
+        type: 2}
+      propertyPath: CreditsCamera
+      value: 
+      objectReference: {fileID: 1530473430}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be1fdf486e768724eab5644be672d612, type: 2}
   m_IsPrefabParent: 0
@@ -302,8 +312,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2064749027}
-        m_MethodName: Selected
+      - m_Target: {fileID: 1352405839}
+        m_MethodName: SwitchToCredits
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -313,8 +323,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2064749027}
-        m_MethodName: MouseOver
+      - m_Target: {fileID: 1352405837}
+        m_MethodName: Selected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -564,8 +574,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2064749027}
-        m_MethodName: Selected
+      - m_Target: {fileID: 1352405839}
+        m_MethodName: SwitchToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -575,8 +585,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2064749027}
-        m_MethodName: MouseOver
+      - m_Target: {fileID: 1352405837}
+        m_MethodName: Selected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -940,7 +950,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1272604518
 GameObject:
@@ -1019,30 +1029,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2064749027}
+      - m_Target: {fileID: 1352405838}
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1352405837}
         m_MethodName: Selected
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2064749027}
-        m_MethodName: MouseOver
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2064749027}
-        m_MethodName: MouseOver
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1104,6 +1103,30 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1352405837 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114937654810234144, guid: be1fdf486e768724eab5644be672d612,
+    type: 2}
+  m_PrefabInternal: {fileID: 179554159}
+  m_Script: {fileID: 11500000, guid: 2a89cddcc05ae0544a6dd18bdc9260c3, type: 3}
+--- !u!114 &1352405838 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114581582216807426, guid: be1fdf486e768724eab5644be672d612,
+    type: 2}
+  m_PrefabInternal: {fileID: 179554159}
+  m_Script: {fileID: 11500000, guid: 4a4a412d5b5613c46a781ddb940036fe, type: 3}
+--- !u!114 &1352405839 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114183620204780250, guid: be1fdf486e768724eab5644be672d612,
+    type: 2}
+  m_PrefabInternal: {fileID: 179554159}
+  m_Script: {fileID: 11500000, guid: 6dd838a422a4164468c8502f69a8c2e9, type: 3}
+--- !u!114 &1352405841 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114859999628218952, guid: be1fdf486e768724eab5644be672d612,
+    type: 2}
+  m_PrefabInternal: {fileID: 179554159}
+  m_Script: {fileID: 11500000, guid: 86c29b0c667d4cc4d821e4ad970f2403, type: 3}
 --- !u!1 &1466592253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1286,7 +1309,7 @@ Transform:
   m_Children:
   - {fileID: 1466592254}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1750085296
 GameObject:
@@ -1365,8 +1388,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2064749027}
-        m_MethodName: Selected
+      - m_Target: {fileID: 1352405841}
+        m_MethodName: LoadCombatScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1376,8 +1399,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2064749027}
-        m_MethodName: MouseOver
+      - m_Target: {fileID: 1352405837}
+        m_MethodName: Selected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1694,108 +1717,8 @@ Transform:
   m_Children:
   - {fileID: 732458604}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2064749021
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1879997068460156, guid: be1fdf486e768724eab5644be672d612,
-    type: 2}
-  m_PrefabInternal: {fileID: 179554159}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2064749025}
-  - component: {fileID: 2064749022}
-  - component: {fileID: 2064749026}
-  - component: {fileID: 2064749023}
-  - component: {fileID: 2064749024}
-  - component: {fileID: 2064749027}
-  m_Layer: 0
-  m_Name: MenuScriptTest
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2064749022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114940283792105320, guid: be1fdf486e768724eab5644be672d612,
-    type: 2}
-  m_PrefabInternal: {fileID: 179554159}
-  m_GameObject: {fileID: 2064749021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c29b0c667d4cc4d821e4ad970f2403, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2064749023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2064749021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dd838a422a4164468c8502f69a8c2e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MenuCamera: {fileID: 2051489569}
-  CreditsCamera: {fileID: 1530473430}
---- !u!114 &2064749024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2064749021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a4a412d5b5613c46a781ddb940036fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &2064749025
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4254224838276042, guid: be1fdf486e768724eab5644be672d612,
-    type: 2}
-  m_PrefabInternal: {fileID: 179554159}
-  m_GameObject: {fileID: 2064749021}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 425.17755, y: 276.3041, z: -0.375}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &2064749026
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2064749021}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4191dc1e130d97542bdbc575997a3ed4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &2064749027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2064749021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a89cddcc05ae0544a6dd18bdc9260c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ButtonObject: {fileID: 0}
 --- !u!1 &2093749354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1933,5 +1856,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
