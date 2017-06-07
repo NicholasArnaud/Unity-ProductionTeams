@@ -1,24 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
 
 public class PlayerCameraBehaviour : MonoBehaviour
 {
-
-    [Range(-45f, 45f)]
-    public float CameraXRotation;
-    [Range(-45f, 45f)]
-    public float CameraYRotation;
-
     public GameObject PlayerToFollow;
     private Vector3 offset;
     private float nearClip;
+    public float CameraDistance;
     private RaycastHit hit;
     // Use this for initialization
     void Start()
     {
-        transform.rotation = Quaternion.Euler(CameraXRotation, CameraYRotation, 0);
         nearClip = GetComponent<Camera>().nearClipPlane;
         offset = transform.position - PlayerToFollow.transform.position;
     }
@@ -26,7 +21,12 @@ public class PlayerCameraBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = PlayerToFollow.transform.position + offset;
+        //basic camera movement         
+        transform.forward = PlayerToFollow.transform.forward;
+        transform.position = PlayerToFollow.transform.position - (transform.forward * CameraDistance) + new Vector3(0,5,0);
+        
+
+        //Checks to move nearClip for obsticles
         if (!Physics.Raycast(transform.position, Vector3.forward, out hit, 10))
         {
             nearClip = 0.3f;
@@ -39,9 +39,10 @@ public class PlayerCameraBehaviour : MonoBehaviour
         }
     }
 
+
+    //Draws a line for the collision of the RayCast
     void OnDrawGizmos()
-    {
-        if(hit.collider != null)
-            Gizmos.DrawLine(transform.position, hit.transform.position);
+    {        
+            Gizmos.DrawLine(transform.position, transform.forward * 2);
     }
 }
