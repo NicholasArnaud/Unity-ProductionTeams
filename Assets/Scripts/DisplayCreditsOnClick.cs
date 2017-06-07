@@ -24,4 +24,6 @@ public class DisplayCreditsOnClick : MonoBehaviour
     {
         CreditsCamera.SetActive(false);
     }
+
+    
 }
