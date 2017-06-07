@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114039317592717606}
   m_Layer: 5
   m_Name: TestButton
-  m_TagString: Untagged
+  m_TagString: Quit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,9 +85,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114869556241010346, guid: be1fdf486e768724eab5644be672d612,
-          type: 2}
-        m_MethodName: DoButtonAction
+      - m_Target: {fileID: 0}
+        m_MethodName: CloseApplication
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

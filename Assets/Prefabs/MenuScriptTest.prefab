@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4254224838276042}
-  - component: {fileID: 114869556241010346}
+  - component: {fileID: 114940283792105320}
   m_Layer: 0
   m_Name: MenuScriptTest
   m_TagString: Untagged
@@ -40,7 +40,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114869556241010346
+--- !u!114 &114940283792105320
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -48,13 +48,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1879997068460156}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dd99d1bdd4a49846aad182de4dedb23, type: 3}
+  m_Script: {fileID: 11500000, guid: 86c29b0c667d4cc4d821e4ad970f2403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TheButton: {fileID: 0}
-  ButtonCanvas: {fileID: 0}
-  ButtonObject: {fileID: 1163002642832106, guid: c4dac77234516ea4db3dd9d95a4c1198,
-    type: 2}
-  ButtonText: {fileID: 114771099067097732, guid: c4dac77234516ea4db3dd9d95a4c1198,
-    type: 2}
-  TestText: {fileID: 0}
