@@ -1,15 +1,65 @@
 fileFormatVersion: 2
-guid: bb3003f74750a8945af4e905d484b40f
-timeCreated: 1496937794
+guid: 4989ce7da4e5e884fb7bf6559c5cd948
+timeCreated: 1496944014
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: WallAndFloor
+    100000: group6
+    100002: group7
+    100004: pasted__group6
+    100006: pasted__pasted__pasted__pCube7
+    100008: pasted__pasted__pCube7
+    100010: pasted__pasted__pCube7 1
+    100012: pasted__pCube7
+    100014: pCube7
+    100016: polySurface156
+    100018: polySurface156 1
+    100020: polySurface157
+    100022: polySurface158
+    100024: polySurface159
+    100026: polySurface160
+    100028: //RootNode
+    100030: RoomCollision
+    100032: transform10
+    100034: transform11
+    100036: transform12
+    100038: transform13
+    100040: transform14
+    100042: transform5
+    100044: transform6
+    100046: transform7
+    100048: transform8
+    100050: transform9
+    400000: group6
+    400002: group7
+    400004: pasted__group6
+    400006: pasted__pasted__pasted__pCube7
+    400008: pasted__pasted__pCube7
+    400010: pasted__pasted__pCube7 1
+    400012: pasted__pCube7
+    400014: pCube7
+    400016: polySurface156
+    400018: polySurface156 1
+    400020: polySurface157
+    400022: polySurface158
+    400024: polySurface159
+    400026: polySurface160
+    400028: //RootNode
+    400030: RoomCollision
+    400032: transform10
+    400034: transform11
+    400036: transform12
+    400038: transform13
+    400040: transform14
+    400042: transform5
+    400044: transform6
+    400046: transform7
+    400048: transform8
+    400050: transform9
+    2300000: polySurface156
+    3300000: polySurface156
+    4300000: polySurface156
     9500000: //RootNode
   materials:
     importMaterials: 1
