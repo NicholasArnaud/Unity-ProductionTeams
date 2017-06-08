@@ -20,6 +20,6 @@ public class PlayerMovementBehaviour : MonoBehaviour
 	    float moveHorizontal = Input.GetAxis("Horizontal");
 	    float moveVertical = Input.GetAxis("Vertical");
         transform.Translate(0, 0, moveVertical);
-	    transform.Rotate(moveHorizontal, 0, 0);
+	    transform.Rotate(0, moveHorizontal, 0);
 	}
 }
