@@ -7,6 +7,7 @@ public class DisplayCreditsOnClick : MonoBehaviour
 {
     public GameObject MenuCamera;
     public GameObject CreditsCamera;
+    public GameObject ControlsCamera;
 
     public void SwitchToCredits()
     {
@@ -18,6 +19,18 @@ public class DisplayCreditsOnClick : MonoBehaviour
     {
         MenuCamera.SetActive(true);
         CreditsCamera.SetActive(false);
+    }
+
+    public void SwitchToMainMenuAlt()
+    {
+        MenuCamera.SetActive(true);
+        ControlsCamera.SetActive(false);
+    }
+
+    public void SwitchToControls()
+    {
+        MenuCamera.SetActive(false);
+        ControlsCamera.SetActive(true);
     }
 
     void Start()
