@@ -1,0 +1,191 @@
+fileFormatVersion: 2
+guid: 1d20569c0b9935749917e1accbc89c25
+timeCreated: 1496958228
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: BackAxelMesh
+    100002: BodyMesh
+    100004: CannonMesh
+    100006: HatMesh
+    100008: L_BackWheelMesh
+    100010: L_EarMesh
+    100012: L_EyeMesh
+    100014: L_FrontWheelMesh
+    100016: L_MirrorMesh
+    100018: MustacheMesh
+    100020: NoseMesh
+    100022: PotatoBodyMesh
+    100024: //RootNode
+    100026: PotatoVehicleMesh
+    100028: R_BackWheelMesh
+    100030: R_EarMesh
+    100032: R_EyeMesh
+    100034: R_FrontWheelMesh
+    100036: R_Mirror
+    100038: TopAxelMesh
+    100040: transform1
+    100042: TurretMesh
+    100044: VeichleRig_Chasis_AuxSHJnt
+    100046: VeichleRig_l_FrontWheels_AuxSHJnt
+    100048: VeichleRig_l_RearWheels_AuxSHJnt
+    100050: VeichleRig_r_FrontWheels_AuxSHJnt
+    100052: VeichleRig_r_RearWheels_AuxSHJnt
+    100054: VeichleRig_ROOTSHJnt
+    400000: BackAxelMesh
+    400002: BodyMesh
+    400004: CannonMesh
+    400006: HatMesh
+    400008: L_BackWheelMesh
+    400010: L_EarMesh
+    400012: L_EyeMesh
+    400014: L_FrontWheelMesh
+    400016: L_MirrorMesh
+    400018: MustacheMesh
+    400020: NoseMesh
+    400022: PotatoBodyMesh
+    400024: //RootNode
+    400026: PotatoVehicleMesh
+    400028: R_BackWheelMesh
+    400030: R_EarMesh
+    400032: R_EyeMesh
+    400034: R_FrontWheelMesh
+    400036: R_Mirror
+    400038: TopAxelMesh
+    400040: transform1
+    400042: TurretMesh
+    400044: VeichleRig_Chasis_AuxSHJnt
+    400046: VeichleRig_l_FrontWheels_AuxSHJnt
+    400048: VeichleRig_l_RearWheels_AuxSHJnt
+    400050: VeichleRig_r_FrontWheels_AuxSHJnt
+    400052: VeichleRig_r_RearWheels_AuxSHJnt
+    400054: VeichleRig_ROOTSHJnt
+    2300000: BackAxelMesh
+    2300002: BodyMesh
+    2300004: CannonMesh
+    2300006: HatMesh
+    2300008: L_BackWheelMesh
+    2300010: L_EarMesh
+    2300012: L_EyeMesh
+    2300014: L_FrontWheelMesh
+    2300016: L_MirrorMesh
+    2300018: MustacheMesh
+    2300020: NoseMesh
+    2300022: PotatoBodyMesh
+    2300024: R_BackWheelMesh
+    2300026: R_EarMesh
+    2300028: R_EyeMesh
+    2300030: R_FrontWheelMesh
+    2300032: R_Mirror
+    2300034: TopAxelMesh
+    2300036: TurretMesh
+    3300000: BackAxelMesh
+    3300002: BodyMesh
+    3300004: CannonMesh
+    3300006: HatMesh
+    3300008: L_BackWheelMesh
+    3300010: L_EarMesh
+    3300012: L_EyeMesh
+    3300014: L_FrontWheelMesh
+    3300016: L_MirrorMesh
+    3300018: MustacheMesh
+    3300020: NoseMesh
+    3300022: PotatoBodyMesh
+    3300024: R_BackWheelMesh
+    3300026: R_EarMesh
+    3300028: R_EyeMesh
+    3300030: R_FrontWheelMesh
+    3300032: R_Mirror
+    3300034: TopAxelMesh
+    3300036: TurretMesh
+    4300000: BodyMesh
+    4300002: R_FrontWheelMesh
+    4300004: L_FrontWheelMesh
+    4300006: TopAxelMesh
+    4300008: L_BackWheelMesh
+    4300010: R_BackWheelMesh
+    4300012: BackAxelMesh
+    4300014: L_MirrorMesh
+    4300016: CannonMesh
+    4300018: TurretMesh
+    4300020: PotatoBodyMesh
+    4300022: R_EyeMesh
+    4300024: NoseMesh
+    4300026: HatMesh
+    4300028: R_EarMesh
+    4300030: MustacheMesh
+    4300032: L_EarMesh
+    4300034: L_EyeMesh
+    4300036: R_Mirror
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

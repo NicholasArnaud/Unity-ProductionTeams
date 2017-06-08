@@ -19,8 +19,8 @@ public class PlayerCameraBehaviour : MonoBehaviour
     {
         //basic camera movement         
         transform.forward = PlayerToFollow.transform.forward;
-        transform.position = PlayerToFollow.transform.position - (transform.forward * CameraDistance) + new Vector3(0,5,0);
-        
+        transform.position = PlayerToFollow.transform.position - (transform.forward * CameraDistance) + new Vector3(0, 5, 0);
+
 
         //Checks to move nearClip for obsticles
         if (!Physics.Raycast(transform.position, Vector3.forward, out hit, 10))
@@ -38,7 +38,10 @@ public class PlayerCameraBehaviour : MonoBehaviour
 
     //Draws a line for the collision of the RayCast
     void OnDrawGizmos()
-    {        
-            Gizmos.DrawLine(transform.position, transform.forward * 2);
+    {
+        if(Physics.Raycast(transform.position, Vector3.forward, out hit, 10))
+            Gizmos.DrawLine(transform.position, hit.transform.position);
+
+        Gizmos.DrawLine(transform.position, transform.forward * 2);
     }
 }
