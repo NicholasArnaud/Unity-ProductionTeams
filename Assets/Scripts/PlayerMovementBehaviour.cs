@@ -19,7 +19,8 @@ public class PlayerMovementBehaviour : MonoBehaviour
 	{
 	    float moveHorizontal = Input.GetAxis("Horizontal");
 	    float moveVertical = Input.GetAxis("Vertical");
-        rb.velocity = new Vector3(transform.forward.x, 0, transform.forward.z) * (moveVertical * speed);
+        rb.AddForce(new Vector3(transform.forward.x, 0, transform.forward.z) * (moveVertical * speed));
+        //rb.velocity = new Vector3(transform.forward.x, 0, transform.forward.z) * (moveVertical * speed);
         //rb.velocity = transform.forward * (moveVertical * speed);
 	    transform.Rotate(0, moveHorizontal, 0);
 	}
