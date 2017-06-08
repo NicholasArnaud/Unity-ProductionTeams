@@ -1,15 +1,126 @@
 fileFormatVersion: 2
 guid: d6c0d2a74feabb04bbcb526049aa1c77
-timeCreated: 1496869622
+timeCreated: 1496940187
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: BackAxelMesh
+    100004: BodyMesh
+    100006: CannonMesh
+    100008: HatMesh
+    100010: L_BackWheelMesh
+    100012: L_EarMesh
+    100014: L_EyeMesh
+    100016: L_FrontWheelMesh
+    100018: L_MirrorMesh
+    100020: MustacheMesh
+    100022: NoseMesh
+    100024: PotatoBodyMesh
+    100026: PotatoVehicleMesh
+    100028: R_BackWheelMesh
+    100030: R_EarMesh
+    100032: R_EyeMesh
+    100034: R_FrontWheelMesh
+    100036: R_Mirror
+    100038: TopAxelMesh
+    100040: transform1
+    100042: TurretMesh
+    100044: VeichleRig_Chasis_AuxSHJnt
+    100046: VeichleRig_l_FrontWheels_AuxSHJnt
+    100048: VeichleRig_l_RearWheels_AuxSHJnt
+    100050: VeichleRig_r_FrontWheels_AuxSHJnt
+    100052: VeichleRig_r_RearWheels_AuxSHJnt
+    100054: VeichleRig_ROOTSHJnt
     400000: //RootNode
+    400002: BackAxelMesh
+    400004: BodyMesh
+    400006: CannonMesh
+    400008: HatMesh
+    400010: L_BackWheelMesh
+    400012: L_EarMesh
+    400014: L_EyeMesh
+    400016: L_FrontWheelMesh
+    400018: L_MirrorMesh
+    400020: MustacheMesh
+    400022: NoseMesh
+    400024: PotatoBodyMesh
+    400026: PotatoVehicleMesh
+    400028: R_BackWheelMesh
+    400030: R_EarMesh
+    400032: R_EyeMesh
+    400034: R_FrontWheelMesh
+    400036: R_Mirror
+    400038: TopAxelMesh
+    400040: transform1
+    400042: TurretMesh
+    400044: VeichleRig_Chasis_AuxSHJnt
+    400046: VeichleRig_l_FrontWheels_AuxSHJnt
+    400048: VeichleRig_l_RearWheels_AuxSHJnt
+    400050: VeichleRig_r_FrontWheels_AuxSHJnt
+    400052: VeichleRig_r_RearWheels_AuxSHJnt
+    400054: VeichleRig_ROOTSHJnt
     2300000: //RootNode
+    2300002: BackAxelMesh
+    2300004: BodyMesh
+    2300006: CannonMesh
+    2300008: HatMesh
+    2300010: L_BackWheelMesh
+    2300012: L_EarMesh
+    2300014: L_EyeMesh
+    2300016: L_FrontWheelMesh
+    2300018: L_MirrorMesh
+    2300020: MustacheMesh
+    2300022: NoseMesh
+    2300024: PotatoBodyMesh
+    2300026: R_BackWheelMesh
+    2300028: R_EarMesh
+    2300030: R_EyeMesh
+    2300032: R_FrontWheelMesh
+    2300034: R_Mirror
+    2300036: TopAxelMesh
+    2300038: TurretMesh
     3300000: //RootNode
+    3300002: BackAxelMesh
+    3300004: BodyMesh
+    3300006: CannonMesh
+    3300008: HatMesh
+    3300010: L_BackWheelMesh
+    3300012: L_EarMesh
+    3300014: L_EyeMesh
+    3300016: L_FrontWheelMesh
+    3300018: L_MirrorMesh
+    3300020: MustacheMesh
+    3300022: NoseMesh
+    3300024: PotatoBodyMesh
+    3300026: R_BackWheelMesh
+    3300028: R_EarMesh
+    3300030: R_EyeMesh
+    3300032: R_FrontWheelMesh
+    3300034: R_Mirror
+    3300036: TopAxelMesh
+    3300038: TurretMesh
     4300000: PotatoVehicle
+    4300002: BodyMesh
+    4300004: R_FrontWheelMesh
+    4300006: L_FrontWheelMesh
+    4300008: TopAxelMesh
+    4300010: L_BackWheelMesh
+    4300012: R_BackWheelMesh
+    4300014: BackAxelMesh
+    4300016: L_MirrorMesh
+    4300018: CannonMesh
+    4300020: TurretMesh
+    4300022: PotatoBodyMesh
+    4300024: R_EyeMesh
+    4300026: NoseMesh
+    4300028: HatMesh
+    4300030: R_EarMesh
+    4300032: MustacheMesh
+    4300034: L_EarMesh
+    4300036: L_EyeMesh
+    4300038: R_Mirror
     9500000: //RootNode
   materials:
     importMaterials: 1
