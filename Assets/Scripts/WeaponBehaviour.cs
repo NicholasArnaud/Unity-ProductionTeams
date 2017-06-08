@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using NUnit.Framework.Internal.Execution;
 using UnityEngine;
 
 public class WeaponBehaviour : MonoBehaviour
@@ -12,6 +13,8 @@ public class WeaponBehaviour : MonoBehaviour
 
     public GameObject CurrentProjectile;
 
+    private Rigidbody firedProjectile;
+
     private Rigidbody _projectileRigidbody;
     private Transform _projectileTransform;
 
@@ -20,15 +23,16 @@ public class WeaponBehaviour : MonoBehaviour
     public void ShootProjectile()
     {
         Roll();
-        var firedProjectile = Instantiate(_projectileRigidbody, _projectileTransform.position,
+        firedProjectile = Instantiate(_projectileRigidbody, _projectileTransform.position,
             _projectileTransform.rotation);
         firedProjectile.transform.position = Character.transform.position + Character.transform.forward;
-        firedProjectile.velocity += Character.transform.forward;
+        firedProjectile.velocity += Character.transform.forward * 10;
+        
     }
 
     public void Roll()
     {
-        _currentRoll = Random.Range(1, 4);
+        _currentRoll = Random.Range(1, 5);
         switch (_currentRoll)
         {
             case 1:
@@ -63,15 +67,29 @@ public class WeaponBehaviour : MonoBehaviour
     }
 
 
-    void update()
+    public void OnColliionDestroy(Collider other)
     {
-        ShootProjectile();
+        //CurrentProjectile.SetActive(false);
     }
 
-    void Start()
+    public void FireInput()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ShootProjectile();
+        }
+    }
+
+    private void Update()
     {
         ShootProjectile();
+        FireInput();
+        OnColliionDestroy(CurrentProjectile.GetComponent<Collider>());
+    }
 
+    private void Start()
+    {
+        
     }
 
 }
