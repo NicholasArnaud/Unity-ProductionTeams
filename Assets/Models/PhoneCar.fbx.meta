@@ -1,56 +1,73 @@
 fileFormatVersion: 2
-guid: b68350f72d7c70c41938f123d891dfbb
-timeCreated: 1496933524
+guid: e0f419ed1df1ffa409e2019c9453e9e8
+timeCreated: 1496940419
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: Canon
     100002: CarBase
-    100004: CarBase 1
-    100006: FrontAxel
-    100008: FrontLeftWheel
-    100010: FullCar
-    100012: LeftRearWheel
-    100014: //RootNode
-    100016: RearAxel1
-    100018: RightFrontWheel
-    100020: RightRearWheel
-    100022: transform10
-    100024: transform11
-    100026: transform12
-    100028: transform13
-    100030: transform14
-    100032: transform15
-    100034: transform16
-    100036: transform17
-    100038: transform18
-    100040: Turrent
+    100004: CarRig_Canon2_AuxSHJnt
+    100006: CarRig_Chasis_AuxSHJnt
+    100008: CarRig_FrontAxel2_AuxSHJnt
+    100010: CarRig_l_FrontWheels_AuxSHJnt
+    100012: CarRig_l_RearWheels_AuxSHJnt
+    100014: CarRig_r_FrontWheels_AuxSHJnt
+    100016: CarRig_r_RearWheels_AuxSHJnt
+    100018: CarRig_RearAxel2_AuxSHJnt
+    100020: CarRig_ROOTSHJnt
+    100022: CarRig_SHJntGrp1
+    100024: CarRig_Terrent2_AuxSHJnt
+    100026: FrontAxel
+    100028: FrontLeftWheel
+    100030: LeftRearWheel
+    100032: //RootNode
+    100034: PhoneCar
+    100036: RearAxel1
+    100038: RightFrontWheel
+    100040: RightRearWheel
+    100042: Turrent
     400000: Canon
     400002: CarBase
-    400004: CarBase 1
-    400006: FrontAxel
-    400008: FrontLeftWheel
-    400010: FullCar
-    400012: LeftRearWheel
-    400014: //RootNode
-    400016: RearAxel1
-    400018: RightFrontWheel
-    400020: RightRearWheel
-    400022: transform10
-    400024: transform11
-    400026: transform12
-    400028: transform13
-    400030: transform14
-    400032: transform15
-    400034: transform16
-    400036: transform17
-    400038: transform18
-    400040: Turrent
-    2300000: CarBase
-    3300000: CarBase
+    400004: CarRig_Canon2_AuxSHJnt
+    400006: CarRig_Chasis_AuxSHJnt
+    400008: CarRig_FrontAxel2_AuxSHJnt
+    400010: CarRig_l_FrontWheels_AuxSHJnt
+    400012: CarRig_l_RearWheels_AuxSHJnt
+    400014: CarRig_r_FrontWheels_AuxSHJnt
+    400016: CarRig_r_RearWheels_AuxSHJnt
+    400018: CarRig_RearAxel2_AuxSHJnt
+    400020: CarRig_ROOTSHJnt
+    400022: CarRig_SHJntGrp1
+    400024: CarRig_Terrent2_AuxSHJnt
+    400026: FrontAxel
+    400028: FrontLeftWheel
+    400030: LeftRearWheel
+    400032: //RootNode
+    400034: PhoneCar
+    400036: RearAxel1
+    400038: RightFrontWheel
+    400040: RightRearWheel
+    400042: Turrent
     4300000: CarBase
+    4300002: FrontLeftWheel
+    4300004: RightFrontWheel
+    4300006: RightRearWheel
+    4300008: RearAxel1
+    4300010: FrontAxel
+    4300012: Canon
+    4300014: Turrent
+    4300016: LeftRearWheel
     9500000: //RootNode
+    13700000: Canon
+    13700002: CarBase
+    13700004: FrontAxel
+    13700006: FrontLeftWheel
+    13700008: LeftRearWheel
+    13700010: RearAxel1
+    13700012: RightFrontWheel
+    13700014: RightRearWheel
+    13700016: Turrent
   materials:
     importMaterials: 1
     materialName: 0
