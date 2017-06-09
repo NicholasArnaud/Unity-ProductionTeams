@@ -16,9 +16,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000013237001706}
+  - component: {fileID: 4000013237001706}
   m_Layer: 0
   m_Name: CamRig
   m_TagString: Untagged
@@ -31,9 +31,9 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000010735303616}
+  - component: {fileID: 4000010735303616}
   m_Layer: 0
   m_Name: CamLookAtTarget
   m_TagString: Untagged
@@ -46,10 +46,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000012686583612}
-  - 146: {fileID: 146000012053955854}
+  - component: {fileID: 4000012686583612}
+  - component: {fileID: 146000012053955854}
   m_Layer: 0
   m_Name: a0r
   m_TagString: Untagged
@@ -62,12 +62,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000013336520370}
-  - 33: {fileID: 33000011193918162}
-  - 23: {fileID: 23000013762071360}
-  - 64: {fileID: 64000012865967366}
+  - component: {fileID: 4000013336520370}
+  - component: {fileID: 33000011193918162}
+  - component: {fileID: 23000013762071360}
+  - component: {fileID: 64000012865967366}
   m_Layer: 0
   m_Name: SportsCarChassis
   m_TagString: Untagged
@@ -80,9 +80,9 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000011158531554}
+  - component: {fileID: 4000011158531554}
   m_Layer: 0
   m_Name: CamPosition
   m_TagString: Untagged
@@ -95,9 +95,9 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000011615560704}
+  - component: {fileID: 4000011615560704}
   m_Layer: 0
   m_Name: CamSidePosition
   m_TagString: Untagged
@@ -110,10 +110,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000010466318304}
-  - 146: {fileID: 146000011086574200}
+  - component: {fileID: 4000010466318304}
+  - component: {fileID: 146000011086574200}
   m_Layer: 0
   m_Name: a1r
   m_TagString: Untagged
@@ -126,12 +126,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000013369119048}
-  - 54: {fileID: 54000014098661938}
-  - 114: {fileID: 114000012284909490}
-  - 114: {fileID: 114000011726551204}
+  - component: {fileID: 4000013369119048}
+  - component: {fileID: 54000014098661938}
+  - component: {fileID: 114000012284909490}
+  - component: {fileID: 114000011726551204}
   m_Layer: 0
   m_Name: SportsCar
   m_TagString: Untagged
@@ -144,10 +144,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000011602991516}
-  - 146: {fileID: 146000011678907170}
+  - component: {fileID: 4000011602991516}
+  - component: {fileID: 146000011678907170}
   m_Layer: 0
   m_Name: a1l
   m_TagString: Untagged
@@ -160,10 +160,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000011545349142}
-  - 146: {fileID: 146000012257288626}
+  - component: {fileID: 4000011545349142}
+  - component: {fileID: 146000012257288626}
   m_Layer: 0
   m_Name: a0l
   m_TagString: Untagged
@@ -297,7 +297,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013318341794}
-  m_LocalRotation: {x: -0, y: -0.26504597, z: -0, w: 0.9642358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.02, y: -4.82, z: 7.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -309,7 +309,7 @@ Transform:
   - {fileID: 4000013237001706}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -30.786001, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23000013762071360
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -330,7 +330,9 @@ MeshRenderer:
   - {fileID: 2100000, guid: 34a12df728295554fbfc96efc84aac90, type: 2}
   - {fileID: 2100000, guid: 7144ce432a49daa45a1c70dab9769ffe, type: 2}
   - {fileID: 2100000, guid: 536d73fdd74709b4fbcc791af7f70f78, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -338,12 +340,13 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33000011193918162
 MeshFilter:
@@ -378,6 +381,8 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 7850de0a286adbf41a42b7bda7ad8cea, type: 3}
 --- !u!114 &114000011726551204
 MonoBehaviour:
@@ -392,8 +397,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxAngle: 30
   maxTorque: 900
+  brakeTorque: 30000
   wheelShape: {fileID: 1000012053017232, guid: 5df883237f1a04244b9a90ad4ee7b437, type: 2}
-  fourWD: 0
+  criticalSpeed: 5
+  stepsBelow: 5
+  stepsAbove: 1
+  driveType: 0
 --- !u!114 &114000012284909490
 MonoBehaviour:
   m_ObjectHideFlags: 1
