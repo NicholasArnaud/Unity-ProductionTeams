@@ -15,7 +15,7 @@ public class PlayerMovementBehaviour : MonoBehaviour
     public int stepsBelow = 5;
     public int stepsAbove = 1;
 
-
+    public GameObject wheelShape;
     private WheelCollider[] m_Wheels;
 
     // Use this for initialization
@@ -60,7 +60,18 @@ public class PlayerMovementBehaviour : MonoBehaviour
 	        {
 	            wheel.motorTorque = torque;
 	        }
+	        if (wheelShape)
+	        {
+	            Quaternion q;
+	            Vector3 p;
+	            wheel.GetWorldPose(out p, out q);
 
+	            // Assume that the only child of the wheelcollider is the wheel shape.
+	            Transform shapeTransform = wheel.transform.GetChild(0);
+	            shapeTransform.position = p;
+	            shapeTransform.rotation = q;
+	        }
+	        
         }
 
         //rb.AddForce(new Vector3(transform.forward.x, 0, transform.forward.z) * (moveVertical * speed));
