@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using NUnit.Framework.Internal.Execution;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WeaponBehaviour : MonoBehaviour
 {
@@ -11,23 +12,20 @@ public class WeaponBehaviour : MonoBehaviour
     public GameObject ProjectileD;
     public GameObject Character;
 
-    public GameObject CurrentProjectile;
-
-    private Rigidbody firedProjectile;
-
-    private Rigidbody _projectileRigidbody;
+    //private Transform CharacterTransform;
+    private GameObject CurrentProjectile;
+    private GameObject _projectileObject;
+    //private Rigidbody _projectileRigidbody;
     private Transform _projectileTransform;
-
     private int _currentRoll;
 
     public void ShootProjectile()
     {
         Roll();
-        firedProjectile = Instantiate(_projectileRigidbody, _projectileTransform.position,
-            _projectileTransform.rotation);
-        firedProjectile.transform.position = Character.transform.position + Character.transform.forward;
-        firedProjectile.velocity += Character.transform.forward * 10;
-        
+        _projectileObject = Instantiate(CurrentProjectile, _projectileTransform.transform.position,
+            _projectileTransform.transform.rotation);
+        _projectileObject.transform.position = Character.transform.position + Character.transform.forward;
+        _projectileObject.GetComponent<Rigidbody>().velocity += Character.transform.forward * 10;
     }
 
     public void Roll()
@@ -38,41 +36,31 @@ public class WeaponBehaviour : MonoBehaviour
             case 1:
                 {
                     CurrentProjectile = ProjectileA;
-                    _projectileRigidbody = CurrentProjectile.GetComponent<Rigidbody>();
                     _projectileTransform = CurrentProjectile.GetComponent<Transform>();
                     break;
                 }
             case 2:
                 {
                     CurrentProjectile = ProjectileB;
-                    _projectileRigidbody = CurrentProjectile.GetComponent<Rigidbody>();
                     _projectileTransform = CurrentProjectile.GetComponent<Transform>();
                     break;
                 }
             case 3:
                 {
                     CurrentProjectile = ProjectileC;
-                    _projectileRigidbody = CurrentProjectile.GetComponent<Rigidbody>();
                     _projectileTransform = CurrentProjectile.GetComponent<Transform>();
                     break;
                 }
             case 4:
                 {
                     CurrentProjectile = ProjectileD;
-                    _projectileRigidbody = CurrentProjectile.GetComponent<Rigidbody>();
                     _projectileTransform = CurrentProjectile.GetComponent<Transform>();
                     break;
                 }
         }
     }
 
-
-    public void OnColliionDestroy(Collider other)
-    {
-        //CurrentProjectile.SetActive(false);
-    }
-
-    public void FireInput()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -80,16 +68,9 @@ public class WeaponBehaviour : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        ShootProjectile();
-        FireInput();
-        OnColliionDestroy(CurrentProjectile.GetComponent<Collider>());
-    }
-
     private void Start()
     {
-        
+
     }
 
 }

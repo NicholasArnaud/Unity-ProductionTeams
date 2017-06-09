@@ -22,8 +22,9 @@ GameObject:
   - component: {fileID: 33664000748664282}
   - component: {fileID: 23639447688436390}
   - component: {fileID: 95658809477153004}
-  - component: {fileID: 65228727918949730}
-  - component: {fileID: 54856673843639136}
+  - component: {fileID: 54822526470562310}
+  - component: {fileID: 65622050753623966}
+  - component: {fileID: 114932993889205172}
   m_Layer: 0
   m_Name: MnMN
   m_TagString: Bullet
@@ -38,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1684416428834060}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.1354, z: -0.00013339291}
+  m_LocalPosition: {x: 4.34, y: 0, z: 22.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,7 +84,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1684416428834060}
   m_Mesh: {fileID: 4300000, guid: 4fef23b1e838d104fb2353bae3309c32, type: 3}
---- !u!54 &54856673843639136
+--- !u!54 &54822526470562310
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -98,14 +99,14 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65228727918949730
+--- !u!65 &65622050753623966
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1684416428834060}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.08461471, y: 0.08461472, z: 0.038942687}
@@ -127,3 +128,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114932993889205172
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1684416428834060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15bf1a64e39d0504bb49267e1db371d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile: {fileID: 1684416428834060}
+  OpponentGameObject: {fileID: 1566913107544858, guid: 48ae665e080e1db40a63e02c358ebbcc,
+    type: 2}
+  OpponentRigidBody: {fileID: 54878694976622500, guid: 48ae665e080e1db40a63e02c358ebbcc,
+    type: 2}
+  PlayerGameObject: {fileID: 1786566093389892, guid: c032743db8750ae4b98c4fd0beec7042,
+    type: 2}
+  PlayerRigidBody: {fileID: 54563109655395512, guid: c032743db8750ae4b98c4fd0beec7042,
+    type: 2}
