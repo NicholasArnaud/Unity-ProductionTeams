@@ -8,8 +8,8 @@ public class PlayerMovementBehaviour : MonoBehaviour
     private Rigidbody rb;
     [Range(0f, 100f)]public float speed;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start ()
 	{
 	    rb = GetComponent<Rigidbody>();
 	}
@@ -19,7 +19,8 @@ public class PlayerMovementBehaviour : MonoBehaviour
 	{
 	    float moveHorizontal = Input.GetAxis("Horizontal");
 	    float moveVertical = Input.GetAxis("Vertical");
-        transform.Translate(0, 0, moveVertical);
+        rb.velocity = new Vector3(transform.forward.x, 0, transform.forward.z) * (moveVertical * speed);
+        //rb.velocity = transform.forward * (moveVertical * speed);
 	    transform.Rotate(0, moveHorizontal, 0);
 	}
 }
