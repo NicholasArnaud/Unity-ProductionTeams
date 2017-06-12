@@ -21,5 +21,4 @@ public class EnemyCharacterMovement : MonoBehaviour
         agent.destination = target.position;
         animator.SetFloat(SPEED, agent.velocity.magnitude);
     }
-
 }

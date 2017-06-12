@@ -73,10 +73,10 @@ NavMeshProjectSettings:
   m_Settings:
   - serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 1.89
-    agentHeight: 1.28
-    agentSlope: 39.87
-    agentClimb: 1.2
+    agentRadius: 1.8
+    agentHeight: 1.49
+    agentSlope: 32
+    agentClimb: 0.45
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -86,4 +86,4 @@ NavMeshProjectSettings:
     tileSize: 256
     accuratePlacement: 0
   m_SettingNames:
-  - Humanoid
+  - Vechicle

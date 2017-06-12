@@ -57,8 +57,5 @@ class VehicleSkeletonWizard : EditorWindow
             leftWheel.transform.localPosition = new Vector3(-m_AxleWidth * 0.5f, m_AxleShift, firstOffset - m_AxleStep * i);
             rightWheel.transform.localPosition = new Vector3(m_AxleWidth * 0.5f, m_AxleShift, firstOffset - m_AxleStep * i);
 		}
-
-		root.AddComponent<EasySuspension>();
-		root.AddComponent<WheelDrive>();
 	}
 }
