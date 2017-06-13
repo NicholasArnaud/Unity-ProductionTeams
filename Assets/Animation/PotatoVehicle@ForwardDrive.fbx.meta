@@ -102,7 +102,7 @@ ModelImporter:
     13700034: TopAxelMesh
     13700036: TurretMesh
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
