@@ -28,7 +28,7 @@ public class PlayerCameraBehaviour : MonoBehaviour
         if (Physics.Raycast(playerToFollow.TransformPoint(0, 1, 0), back, out hit, 2.5f)
             && hit.transform != playerToFollow)
         {
-            wantedPosition = new Vector3(hit.point.x, Mathf.Lerp(hit.point.y + bumperCameraHeight, wantedPosition.y, Time.deltaTime * smoother), hit.point.z);
+            wantedPosition = new Vector3(hit.point.x, Mathf.Lerp(hit.point.y + bumperCameraHeight, wantedPosition.y, Time.deltaTime * rotationSmoother), hit.point.z);
         }
 
         //fixes rotation and position of the camera
