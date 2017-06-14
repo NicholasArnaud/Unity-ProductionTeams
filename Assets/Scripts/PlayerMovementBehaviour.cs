@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMovementBehaviour : MonoBehaviour
@@ -44,6 +45,9 @@ public class PlayerMovementBehaviour : MonoBehaviour
 
         if (Input.GetKey(KeyCode.R))
             transform.rotation = Quaternion.Euler(0, 0, 0);
+
+        if (Input.GetKey(KeyCode.Escape))
+            SceneManager.LoadScene(0);
 
         foreach (var wheel in m_Wheels)
         {
