@@ -2,32 +2,43 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyProjectile : WeaponBehaviour
+public class DestroyProjectile : MonoBehaviour
 {
     public GameObject Projectile;
-    public GameObject OpponentGameObject;
-    public GameObject PlayerGameObject;
-
 
     void OnTriggerEnter(Collider other)
     {
-        if (OpponentGameObject.tag == "Opponent")
+        if (other.tag == "Player")
         {
             Destroy(Projectile);
-            this._projectilecounter--;
-            Debug.Log("Opponent Hit");
+            WeaponBehaviour.instance.projectileCounter--;
+            PlayerStats.InstancePlayerStats.TakeDamage();
+            Debug.Log("Player was hit.");
         }
-        if (PlayerGameObject.tag == "Player")
+        if (other.tag == "Opponet")
         {
             Destroy(Projectile);
-            this._projectilecounter--;
-            Debug.Log("Player Hit");
+            OpponentWeaponBehaviour.instance.projectileCounter--;
+            OpponentStats.InstanceOpponentStats.TakeDamage();
+            Debug.Log("Opponet was hit.");
         }
         else
         {
             Destroy(Projectile);
-            this._projectilecounter--;
-            Debug.Log("Something Was Hit");
+            WeaponBehaviour.instance.projectileCounter--;
+            OpponentWeaponBehaviour.instance.projectileCounter--;
+            Debug.Log("Something was hit.");
         }
     }
+
+    void Start()
+    {
+
+    }
+
+    void update()
+    {
+
+    }
 }
+

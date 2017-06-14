@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerStats : MonoBehaviour
+public class OpponentStats : MonoBehaviour
 {
-    public static PlayerStats InstancePlayerStats;
+    public static OpponentStats InstanceOpponentStats;
     public bool IsDead;
     public float Health;
     public float CurrentHealth;
@@ -37,7 +37,7 @@ public class PlayerStats : MonoBehaviour
         CurrentHealth = Health;
         IsDead = false;
         ProjectileDmg = 10;
-        InstancePlayerStats = this;
+        InstanceOpponentStats = this;
     }
 
     void Update()

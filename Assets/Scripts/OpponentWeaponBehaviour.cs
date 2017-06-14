@@ -4,9 +4,9 @@ using NUnit.Framework.Internal.Execution;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class WeaponBehaviour : MonoBehaviour
+public class OpponentWeaponBehaviour : MonoBehaviour
 {
-    public static WeaponBehaviour instance;
+    public static OpponentWeaponBehaviour instance;
     public GameObject ProjectileA;
     public GameObject ProjectileB;
     public GameObject ProjectileC;
@@ -61,18 +61,18 @@ public class WeaponBehaviour : MonoBehaviour
                 }
         }
     }
-     
+
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && projectileCounter < 3)
+        if (InSight == true && projectileCounter < 3)
         {
             ShootProjectile();
         }
-        else if (Input.GetKeyDown(KeyCode.Space) && projectileCounter >= 3)
+        else if (InSight == true && projectileCounter == 3)
         {
             Debug.Log("Too many projectiles in scene to fire more");
         }
-        if (projectileCounter < 0)
+        if (projectileCounter < 0 || projectileCounter > 4)
         {
             projectileCounter = 0;
         }

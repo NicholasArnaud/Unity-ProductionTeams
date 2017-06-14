@@ -140,11 +140,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Projectile: {fileID: 1759836540935996}
-  OpponentGameObject: {fileID: 1566913107544858, guid: 48ae665e080e1db40a63e02c358ebbcc,
-    type: 2}
-  OpponentRigidBody: {fileID: 54878694976622500, guid: 48ae665e080e1db40a63e02c358ebbcc,
-    type: 2}
-  PlayerGameObject: {fileID: 1786566093389892, guid: c032743db8750ae4b98c4fd0beec7042,
-    type: 2}
-  PlayerRigidBody: {fileID: 54563109655395512, guid: c032743db8750ae4b98c4fd0beec7042,
-    type: 2}
+  OpponentGameObject: {fileID: 0}
+  PlayerGameObject: {fileID: 0}
+  CharacterGameObject: {fileID: 0}
