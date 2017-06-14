@@ -108,6 +108,31 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &32874580 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1959640470480282, guid: b18196266720b904c889a8a260ff8a19,
+    type: 2}
+  m_PrefabInternal: {fileID: 1873176643}
+--- !u!223 &32874584
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 32874580}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1001 &179554159
 Prefab:
   m_ObjectHideFlags: 0
@@ -448,6 +473,46 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1352405839}
+    - target: {fileID: 224314229120093488, guid: cfd09f6c8f9b5634cb2b20459fabc353,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224314229120093488, guid: cfd09f6c8f9b5634cb2b20459fabc353,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554416485125048, guid: cfd09f6c8f9b5634cb2b20459fabc353,
+        type: 2}
+      propertyPath: m_Text
+      value: 'Controls:
+
+
+        Movement
+
+        ---------------------
+
+        W - Accelerate
+
+        A - Turn Left
+
+        D - Turn Right
+
+        S - Reverse
+
+
+
+        Action
+
+        ----------------
+
+        Space - Shoot
+
+        R - Flip your vehicle over
+
+        Esc - Return to main menu'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cfd09f6c8f9b5634cb2b20459fabc353, type: 2}
   m_IsPrefabParent: 0
@@ -643,6 +708,21 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1352405839}
+    - target: {fileID: 95359822708651454, guid: 3b52c7b7d063c904cbeec6d12909dd64,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4191dc1e130d97542bdbc575997a3ed4, type: 2}
+    - target: {fileID: 224013648469127600, guid: 3b52c7b7d063c904cbeec6d12909dd64,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224013648469127600, guid: 3b52c7b7d063c904cbeec6d12909dd64,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b52c7b7d063c904cbeec6d12909dd64, type: 2}
   m_IsPrefabParent: 0
