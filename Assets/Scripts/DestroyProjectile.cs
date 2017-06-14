@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyProjectile : MonoBehaviour
+public class DestroyProjectile : WeaponBehaviour
 {
     public GameObject Projectile;
     public GameObject OpponentGameObject;
@@ -14,15 +14,20 @@ public class DestroyProjectile : MonoBehaviour
         if (OpponentGameObject.tag == "Opponent")
         {
             Destroy(Projectile);
+            this._projectilecounter--;
             Debug.Log("Opponent Hit");
         }
-        if(PlayerGameObject.tag == "Player")
+        if (PlayerGameObject.tag == "Player")
         {
             Destroy(Projectile);
+            this._projectilecounter--;
             Debug.Log("Player Hit");
         }
         else
+        {
             Destroy(Projectile);
-        Debug.Log("Something Was Hit");
+            this._projectilecounter--;
+            Debug.Log("Something Was Hit");
+        }
     }
 }

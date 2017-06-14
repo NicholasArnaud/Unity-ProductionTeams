@@ -18,10 +18,12 @@ public class WeaponBehaviour : MonoBehaviour
     //private Rigidbody _projectileRigidbody;
     private Transform _projectileTransform;
     private int _currentRoll;
+    protected int _projectilecounter;
 
     public void ShootProjectile()
     {
         Roll();
+        this._projectilecounter++;
         _projectileObject = Instantiate(CurrentProjectile, _projectileTransform.transform.position,
             _projectileTransform.transform.rotation);
         _projectileObject.transform.position = Character.transform.position + Character.transform.forward;
@@ -62,9 +64,13 @@ public class WeaponBehaviour : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && this._projectilecounter< 3)
         {
             ShootProjectile();
+        }
+        else if (Input.GetKeyDown(KeyCode.Space) && this._projectilecounter >= 3)
+        {
+            Debug.Log("To many projectiles in scene to fire more");
         }
     }
 

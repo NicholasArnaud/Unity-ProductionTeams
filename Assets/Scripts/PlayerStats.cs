@@ -5,29 +5,43 @@ using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
-    protected int Health;
-    protected bool IsDead;  
+
+    protected bool IsDead;
+
+    private float Health;
+    private float CurrentHealth;
+    private float ProjectileDmg;
 
     public void TakeDamage()
     {
-        Health -= 10;
+        CurrentHealth -= ProjectileDmg;
     }
 
     public void CharacterDeath()
     {
-        //Scene Reset
+        IsDead = true;
+        // Animation
+        /*Once Animation is done then...*/ gameObject.SetActive(false);
     }
+
+    public void UpdateUI()
+    {
+        if (CurrentHealth <= 0)
+        {
+            CharacterDeath();
+        }
+    }
+
     void Start()
     {
         Health = 100;
+        CurrentHealth = Health;
         IsDead = false;
+        ProjectileDmg = 10;
     }
 
     void Update()
     {
-        if (Health <= 0)
-        {
-            CharacterDeath();
-        }
+        UpdateUI();
     }
 }
