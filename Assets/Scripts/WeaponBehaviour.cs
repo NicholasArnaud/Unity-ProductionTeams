@@ -24,7 +24,7 @@ public class WeaponBehaviour : MonoBehaviour
         projectileCounter++;
         _projectileObject = Instantiate(CurrentProjectile, _projectileTransform.transform.position,
             _projectileTransform.transform.rotation);
-        _projectileObject.transform.position = transform.position + transform.forward;
+        _projectileObject.transform.position = transform.position + transform.forward *2;
         _projectileObject.GetComponent<Rigidbody>().velocity += transform.forward * 10;
     }
 
