@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 4f56acd202d38604a82d5665f2436d32
+timeCreated: 1497543990
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Neat Chalk
+  fontNames:
+  - Neat Chalk
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
