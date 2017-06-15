@@ -6,18 +6,18 @@ public class PlayerCameraBehaviour : MonoBehaviour
     public float height;
     public float distance;
 
-    private float smoother= 5.0f;
-    private float rotationSmoother = 10.0f;
-    private float bumperCameraHeight = 4.5f;
+    public float smoother= 5.0f;
+    public float rotationSmoother = 10.0f;
+    public float bumperCameraHeight = 4.5f;
 
     // Use this for initialization
     void Start()
     {
-        Camera.main.transform.parent = playerToFollow;
+
     }
 
-    // Update is called once per frame
-    void Update()
+    // Update is called once per framedw
+    void FixedUpdate()
     {
         //basic camera movement
         Vector3 wantedPosition = playerToFollow.TransformPoint(0, height, -distance);
@@ -28,7 +28,7 @@ public class PlayerCameraBehaviour : MonoBehaviour
         if (Physics.Raycast(playerToFollow.TransformPoint(0, 1, 0), back, out hit, 2.5f)
             && hit.transform != playerToFollow)
         {
-            wantedPosition = new Vector3(hit.point.x, Mathf.Lerp(hit.point.y + bumperCameraHeight, wantedPosition.y, Time.deltaTime * rotationSmoother), hit.point.z);
+            wantedPosition = new Vector3(hit.point.x, Mathf.Lerp(hit.point.y + bumperCameraHeight, wantedPosition.y, Time.deltaTime * smoother), hit.point.z);
         }
 
         //fixes rotation and position of the camera
