@@ -16,15 +16,13 @@ public class PlayerMovementBehaviour : MonoBehaviour
     public float maxTorque = 300f;
     public int stepsAbove = 1;
     public int stepsBelow = 5;
-
-    public GameObject wheelShape;
+    
 
     // Use this for initialization
     private void Start()
     {
         //rb = GetComponent<Rigidbody>();
-
-
+        
         m_Wheels = GetComponentsInChildren<WheelCollider>();
 
         for (var i = 0; i < m_Wheels.Length; i++)
@@ -62,17 +60,6 @@ public class PlayerMovementBehaviour : MonoBehaviour
 
             if (wheel.transform.localPosition.z >= 0)
                 wheel.motorTorque = torque;
-            if (wheelShape)
-            {
-                Quaternion q;
-                Vector3 p;
-                wheel.GetWorldPose(out p, out q);
-
-                // Assume that the only child of the wheelcollider is the wheel shape.
-                var shapeTransform = wheel.transform.GetChild(0);
-                shapeTransform.position = p;
-                shapeTransform.rotation = q;
-            }
         }
 
         //rb.AddForce(new Vector3(transform.forward.x, 0, transform.forward.z) * (moveVertical * speed));
