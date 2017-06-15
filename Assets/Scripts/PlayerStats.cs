@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class PlayerStats : MonoBehaviour
 {
     public static PlayerStats InstancePlayerStats;
-    public bool IsDead;
-    public float Health;
-    public float CurrentHealth;
-    public float ProjectileDmg;
+    private bool IsDead;
+    private float Health;
+    [SerializeField]
+    private float CurrentHealth;
+    private float ProjectileDmg;
 
     public void TakeDamage()
     {

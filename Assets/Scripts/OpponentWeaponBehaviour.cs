@@ -25,7 +25,7 @@ public class OpponentWeaponBehaviour : MonoBehaviour
         projectileCounter++;
         _projectileObject = Instantiate(CurrentProjectile, _projectileTransform.transform.position,
             _projectileTransform.transform.rotation);
-        _projectileObject.transform.position = transform.position +transform.forward;
+        _projectileObject.transform.position = transform.position + transform.forward+ transform.forward;
         _projectileObject.GetComponent<Rigidbody>().velocity += transform.forward * 10;
     }
 
@@ -36,17 +36,27 @@ public class OpponentWeaponBehaviour : MonoBehaviour
         _projectileTransform = CurrentProjectile.GetComponent<Transform>();
     }
 
+    public float fireDelay;
+    [SerializeField]
+    private float timer;
+
     private void Update()
     {
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, 50.0f))
         {
+            
             if (hit.transform == target)
             {
-                StartCoroutine(Timer());
+                timer += Time.deltaTime;
+                if (timer >= fireDelay)
+                {
+                    ShootProjectile();
+                    timer = 0;
+                }
                 Debug.Log("Hit Player");
             }
-        }
+        }        
     }
 
     private void Start()
