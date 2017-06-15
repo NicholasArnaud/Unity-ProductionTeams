@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class OpponentStats : MonoBehaviour
 {
+    public GameObject WinMenu;
     public static OpponentStats InstanceOpponentStats;
     private bool IsDead;
     private float Health;
@@ -24,7 +25,10 @@ public class OpponentStats : MonoBehaviour
     {
         this.IsDead = true;
         // Animation
-        /*Once Animation is done then...*/ this.gameObject.SetActive(false);
+        /*Once Animation is done then...*/
+        this.gameObject.SetActive(false);
+        WinMenu.SetActive(true);
+
     }
 
     public void UpdateUI()
@@ -43,6 +47,7 @@ public class OpponentStats : MonoBehaviour
         ProjectileDmg = 10;
         InstanceOpponentStats = this;
         TextHealth.text = "Enemy Health : " + CurrentHealth;
+        WinMenu.SetActive(false);
     }
 
     void Update()
