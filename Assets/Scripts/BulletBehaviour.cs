@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyProjectile : MonoBehaviour
+public class BulletBehaviour : MonoBehaviour
 {
     public GameObject Projectile;
 
@@ -15,7 +15,7 @@ public class DestroyProjectile : MonoBehaviour
             PlayerStats.InstancePlayerStats.TakeDamage();
             Debug.Log("Player was hit.");
         }
-        if (other.tag == "Opponet")
+        if (other.tag == "Opponent")
         {
             Destroy(Projectile);
             OpponentWeaponBehaviour.instance.projectileCounter--;
@@ -29,16 +29,6 @@ public class DestroyProjectile : MonoBehaviour
             OpponentWeaponBehaviour.instance.projectileCounter--;
             Debug.Log("Something was hit.");
         }
-    }
-
-    void Start()
-    {
-
-    }
-
-    void update()
-    {
-
     }
 }
 
