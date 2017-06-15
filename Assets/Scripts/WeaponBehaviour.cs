@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using NUnit.Framework.Internal.Execution;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
