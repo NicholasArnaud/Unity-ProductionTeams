@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
+    public GameObject LoseMenu;
     public static PlayerStats InstancePlayerStats;
     private bool IsDead;
     private float Health;
+    [SerializeField]
+    private Text TextHealth;
     [SerializeField]
     private float CurrentHealth;
     private float ProjectileDmg;
@@ -21,7 +25,10 @@ public class PlayerStats : MonoBehaviour
     {
         this.IsDead = true;
         // Animation
-        /*Once Animation is done then...*/ this.gameObject.SetActive(false);
+        /*Once Animation is done then...*/
+        this.gameObject.SetActive(false);
+        LoseMenu.SetActive(true);
+
     }
 
     public void UpdateUI()
@@ -39,10 +46,13 @@ public class PlayerStats : MonoBehaviour
         IsDead = false;
         ProjectileDmg = 10;
         InstancePlayerStats = this;
+        TextHealth.text = "Player Health : " + CurrentHealth;
+        LoseMenu.SetActive(false);
     }
 
     void Update()
     {
         UpdateUI();
+        TextHealth.text = "Player Health : " + CurrentHealth;
     }
 }
