@@ -7,14 +7,13 @@ using UnityEngine.SceneManagement;
 public class OpponentWeaponBehaviour : MonoBehaviour
 {
     public static OpponentWeaponBehaviour instance;
-    public GameObject ProjectileA;
-    public GameObject ProjectileB;
-    public GameObject ProjectileC;
-    public GameObject ProjectileD;
-    public GameObject Character;
-    public int projectileCounter;
-    public bool InSight;
+    public List<GameObject> ProjectileList;
+    public Transform target;
 
+
+    public int projectileCounter;
+    private bool InSight;
+    
     private GameObject CurrentProjectile;
     private GameObject _projectileObject;
     private Transform _projectileTransform;
@@ -26,61 +25,44 @@ public class OpponentWeaponBehaviour : MonoBehaviour
         projectileCounter++;
         _projectileObject = Instantiate(CurrentProjectile, _projectileTransform.transform.position,
             _projectileTransform.transform.rotation);
-        _projectileObject.transform.position = Character.transform.position + Character.transform.forward;
-        _projectileObject.GetComponent<Rigidbody>().velocity += Character.transform.forward * 10;
+        _projectileObject.transform.position = transform.position +transform.forward;
+        _projectileObject.GetComponent<Rigidbody>().velocity += transform.forward * 10;
     }
 
     public void Roll()
     {
-        _currentRoll = Random.Range(1, 5);
-        switch (_currentRoll)
-        {
-            case 1:
-                {
-                    CurrentProjectile = ProjectileA;
-                    _projectileTransform = CurrentProjectile.GetComponent<Transform>();
-                    break;
-                }
-            case 2:
-                {
-                    CurrentProjectile = ProjectileB;
-                    _projectileTransform = CurrentProjectile.GetComponent<Transform>();
-                    break;
-                }
-            case 3:
-                {
-                    CurrentProjectile = ProjectileC;
-                    _projectileTransform = CurrentProjectile.GetComponent<Transform>();
-                    break;
-                }
-            case 4:
-                {
-                    CurrentProjectile = ProjectileD;
-                    _projectileTransform = CurrentProjectile.GetComponent<Transform>();
-                    break;
-                }
-        }
+        _currentRoll = Random.Range(0, ProjectileList.Count);
+        CurrentProjectile = ProjectileList[_currentRoll];
+        _projectileTransform = CurrentProjectile.GetComponent<Transform>();
     }
 
     private void Update()
     {
-        if (InSight == true && projectileCounter < 3)
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 50.0f))
         {
-            ShootProjectile();
-        }
-        else if (InSight == true && projectileCounter == 3)
-        {
-            Debug.Log("Too many projectiles in scene to fire more");
-        }
-        if (projectileCounter < 0 || projectileCounter > 4)
-        {
-            projectileCounter = 0;
+            if (hit.transform == target)
+            {
+                StartCoroutine(Timer());
+                Debug.Log("Hit Player");
+            }
         }
     }
 
     private void Start()
     {
         instance = this;
+        projectileCounter = 0;
+    }
+
+    IEnumerator Timer()
+    {
+        for (int i = 0; i < 7; i++)
+        {
+            ShootProjectile();
+            yield return new WaitForSecondsRealtime(0.3f);
+        }
+
     }
 
 }

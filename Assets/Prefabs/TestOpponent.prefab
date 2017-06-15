@@ -22,12 +22,12 @@ GameObject:
   - component: {fileID: 33896905820414770}
   - component: {fileID: 65010774692231996}
   - component: {fileID: 23458688824997262}
-  - component: {fileID: 114707636811507540}
   - component: {fileID: 54878694976622500}
-  - component: {fileID: 114882764034968712}
+  - component: {fileID: 114957452378371064}
+  - component: {fileID: 114494948491790564}
   m_Layer: 0
   m_Name: TestOpponent
-  m_TagString: Opponet
+  m_TagString: Opponent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1566913107544858}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: -0.24, y: 0, z: -16.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -111,7 +111,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114707636811507540
+--- !u!114 &114494948491790564
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -119,19 +119,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1566913107544858}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbbd90d5d3233a34592446c9c53e363c, type: 3}
+  m_Script: {fileID: 11500000, guid: daff979800847b246afa3bce2b005001, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ProjectileA: {fileID: 1759836540935996, guid: cf31e842171abfa41b6ee0f73a4466d1,
-    type: 2}
-  ProjectileB: {fileID: 1748760304620162, guid: b5c6d56385f88f341bd949bead313289,
-    type: 2}
-  ProjectileC: {fileID: 1684416428834060, guid: 0144a973f4fc3a941bc95ececb97ea43,
-    type: 2}
-  ProjectileD: {fileID: 1784516997988932, guid: 9c843e3f11f9b3d4bace7f79a3701ea8,
-    type: 2}
-  Character: {fileID: 1566913107544858}
---- !u!114 &114882764034968712
+  ProjectileList:
+  - {fileID: 1759836540935996, guid: cf31e842171abfa41b6ee0f73a4466d1, type: 2}
+  - {fileID: 1748760304620162, guid: b5c6d56385f88f341bd949bead313289, type: 2}
+  - {fileID: 1684416428834060, guid: 0144a973f4fc3a941bc95ececb97ea43, type: 2}
+  - {fileID: 1784516997988932, guid: 9c843e3f11f9b3d4bace7f79a3701ea8, type: 2}
+  projectileCounter: 0
+--- !u!114 &114957452378371064
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -139,6 +136,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1566913107544858}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79ae08a968921494d97c6b4a7bd9b58e, type: 3}
+  m_Script: {fileID: 11500000, guid: e37f6183055d688419d978d74e468c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsDead: 0
+  Health: 0
+  CurrentHealth: 0
+  ProjectileDmg: 0
