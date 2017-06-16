@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.24342464, g: 0.27898768, b: 0.34255382, a: 1}
+  m_IndirectSpecularColor: {r: 0.5305594, g: 0.56479234, b: 0.62013316, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -50,7 +50,7 @@ LightmapSettings:
     m_IndirectOutputScale: 1
     m_AlbedoBoost: 1
     m_TemporalCoherenceThreshold: 1
-    m_EnvironmentLightingMode: 0
+    m_EnvironmentLightingMode: 1
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
@@ -432,7 +432,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cf6e110b3fb8ee74bb1338d2f2f70783, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cf6e110b3fb8ee74bb1338d2f2f70783, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1369,7 +1369,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cf6e110b3fb8ee74bb1338d2f2f70783, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cf6e110b3fb8ee74bb1338d2f2f70783, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1592,7 +1592,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cf6e110b3fb8ee74bb1338d2f2f70783, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cf6e110b3fb8ee74bb1338d2f2f70783, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2205,7 +2205,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cf6e110b3fb8ee74bb1338d2f2f70783, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cf6e110b3fb8ee74bb1338d2f2f70783, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -5047,7 +5047,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cf6e110b3fb8ee74bb1338d2f2f70783, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cf6e110b3fb8ee74bb1338d2f2f70783, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -5141,7 +5141,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cf6e110b3fb8ee74bb1338d2f2f70783, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cf6e110b3fb8ee74bb1338d2f2f70783, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -5498,7 +5498,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cf6e110b3fb8ee74bb1338d2f2f70783, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cf6e110b3fb8ee74bb1338d2f2f70783, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -6152,7 +6152,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
@@ -6703,7 +6703,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 4989ce7da4e5e884fb7bf6559c5cd948, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 4989ce7da4e5e884fb7bf6559c5cd948, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -7903,7 +7903,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 2c4ce897ea1aee6468bdd8ef82b5fb8f, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 2c4ce897ea1aee6468bdd8ef82b5fb8f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -9015,7 +9015,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4a9a09e8d6e15ed459cabe81f85e0271, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 4a9a09e8d6e15ed459cabe81f85e0271, type: 3}
       propertyPath: m_Materials.Array.data[0]
