@@ -10,12 +10,12 @@ public class PlayerStats : MonoBehaviour
     public static PlayerStats InstancePlayerStats;
     private bool IsDead;
     private float Health;
-    [SerializeField]
-    private Text TextHealth;
+    public Text TextHealth;
     [SerializeField]
     private float CurrentHealth;
     private float ProjectileDmg;
-    int checkDeath;
+
+    
     private Animator animator;
     private float deadTimer;
     private int deadCounter;
@@ -23,25 +23,6 @@ public class PlayerStats : MonoBehaviour
     public void TakeDamage()
     {
         CurrentHealth -= ProjectileDmg;
-    }
-
-    public bool CharacterDeath()
-    {
-        if (checkDeath == 1)
-        {
-            animator.SetTrigger("Dead");
-        }
-        this.IsDead = true;
-        // Animation
-
-        /*Once Animation is done then...*/
-        //this.gameObject.SetActive(false);
-        if (animationDone())
-        {
-            Time.timeScale = 0.0f;
-            LoseMenu.SetActive(true);
-        }
-        return false;
     }
 
     private bool animationDone()
@@ -62,7 +43,6 @@ public class PlayerStats : MonoBehaviour
 
     void Start()
     {
-        checkDeath = 0;
         deadCounter = 0;
         deadTimer = 0;
         Health = 100;
@@ -74,11 +54,6 @@ public class PlayerStats : MonoBehaviour
         LoseMenu.SetActive(false);
         animator = GetComponent<Animator>();
 
-    }
-
-    public void ResetTime()
-    {
-        Time.timeScale = 1.0f;
     }
 
     void Update()
@@ -101,8 +76,8 @@ public class PlayerStats : MonoBehaviour
             if (animationDone())
             { 
                 LoseMenu.SetActive(true);
+                
             }
-            
         }
 
         if (LoseMenu.active == true)

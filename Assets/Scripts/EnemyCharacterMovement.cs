@@ -5,14 +5,11 @@ using UnityEngine.AI;
 public class EnemyCharacterMovement : MonoBehaviour
 {
     private NavMeshAgent agent;
-    private Animator animator;
-    private readonly int SPEED = Animator.StringToHash("speed");
     public Transform target;
 
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -20,7 +17,5 @@ public class EnemyCharacterMovement : MonoBehaviour
     private void Update()
     {
         agent.destination = target.position;
-        animator.SetFloat(SPEED, agent.velocity.magnitude);
-
     }
 }
