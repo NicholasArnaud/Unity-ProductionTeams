@@ -15,32 +15,56 @@ public class PlayerStats : MonoBehaviour
     [SerializeField]
     private float CurrentHealth;
     private float ProjectileDmg;
+    int checkDeath;
+    private Animator animator;
+    private float deadTimer;
+    private int deadCounter;
 
     public void TakeDamage()
     {
         CurrentHealth -= ProjectileDmg;
     }
 
-    public void CharacterDeath()
+    public bool CharacterDeath()
     {
+        if (checkDeath == 1)
+        {
+            animator.SetTrigger("Dead");
+        }
         this.IsDead = true;
         // Animation
-        /*Once Animation is done then...*/
-        this.gameObject.SetActive(false);
-        LoseMenu.SetActive(true);
 
+        /*Once Animation is done then...*/
+        //this.gameObject.SetActive(false);
+        if (animationDone())
+        {
+            Time.timeScale = 0.0f;
+            LoseMenu.SetActive(true);
+        }
+        return false;
     }
 
-    public void UpdateUI()
+    private bool animationDone()
     {
-        if (CurrentHealth <= 0)
+        deadTimer += Time.deltaTime;
+        if (deadTimer >= 2.0f)
         {
-            CharacterDeath();
+            return true;
         }
+        return false;
+    }
+
+
+    void Death()
+    {
+        animator.SetTrigger("Dead");
     }
 
     void Start()
     {
+        checkDeath = 0;
+        deadCounter = 0;
+        deadTimer = 0;
         Health = 100;
         CurrentHealth = Health;
         IsDead = false;
@@ -48,11 +72,34 @@ public class PlayerStats : MonoBehaviour
         InstancePlayerStats = this;
         TextHealth.text = "Player Health : " + CurrentHealth;
         LoseMenu.SetActive(false);
+        animator = GetComponent<Animator>();
+
     }
 
     void Update()
     {
-        UpdateUI();
+
+        if (CurrentHealth <= 0)
+        {
+            //CharacterDeath();
+            //checkDeath = 1;
+            IsDead = true;
+            if (deadCounter < 1)
+            {
+                Death();
+            }
+            deadCounter += 1;
+        }
+
+        if (IsDead == true)
+        {
+            if (animationDone())
+            {
+                Time.timeScale = 0.0f;
+                LoseMenu.SetActive(true);
+            }
+        }
+
         TextHealth.text = "Player Health : " + CurrentHealth;
     }
 }

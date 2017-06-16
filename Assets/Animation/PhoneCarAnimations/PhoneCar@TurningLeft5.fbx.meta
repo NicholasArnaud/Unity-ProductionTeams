@@ -1,0 +1,141 @@
+fileFormatVersion: 2
+guid: 5be4127c2f088b34c9efdf24bab5b599
+timeCreated: 1497568130
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Canon
+    100002: CarBase
+    100004: CarRig_Canon2_AuxSHJnt
+    100006: CarRig_Chasis_AuxSHJnt
+    100008: CarRig_FrontAxel2_AuxSHJnt
+    100010: CarRig_l_FrontWheels_AuxSHJnt
+    100012: CarRig_l_RearWheels_AuxSHJnt
+    100014: CarRig_r_FrontWheels_AuxSHJnt
+    100016: CarRig_r_RearWheels_AuxSHJnt
+    100018: CarRig_RearAxel2_AuxSHJnt
+    100020: CarRig_ROOTSHJnt
+    100022: CarRig_SHJntGrp1
+    100024: CarRig_Terrent2_AuxSHJnt
+    100026: FrontAxel
+    100028: FrontLeftWheel
+    100030: FullCar
+    100032: LeftRearWheel
+    100034: //RootNode
+    100036: RearAxel1
+    100038: RightFrontWheel
+    100040: RightRearWheel
+    100042: Turrent
+    400000: Canon
+    400002: CarBase
+    400004: CarRig_Canon2_AuxSHJnt
+    400006: CarRig_Chasis_AuxSHJnt
+    400008: CarRig_FrontAxel2_AuxSHJnt
+    400010: CarRig_l_FrontWheels_AuxSHJnt
+    400012: CarRig_l_RearWheels_AuxSHJnt
+    400014: CarRig_r_FrontWheels_AuxSHJnt
+    400016: CarRig_r_RearWheels_AuxSHJnt
+    400018: CarRig_RearAxel2_AuxSHJnt
+    400020: CarRig_ROOTSHJnt
+    400022: CarRig_SHJntGrp1
+    400024: CarRig_Terrent2_AuxSHJnt
+    400026: FrontAxel
+    400028: FrontLeftWheel
+    400030: FullCar
+    400032: LeftRearWheel
+    400034: //RootNode
+    400036: RearAxel1
+    400038: RightFrontWheel
+    400040: RightRearWheel
+    400042: Turrent
+    4300000: CarBase
+    4300002: FrontLeftWheel
+    4300004: RightFrontWheel
+    4300006: RightRearWheel
+    4300008: RearAxel1
+    4300010: FrontAxel
+    4300012: Canon
+    4300014: Turrent
+    4300016: LeftRearWheel
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Canon
+    13700002: CarBase
+    13700004: FrontAxel
+    13700006: FrontLeftWheel
+    13700008: LeftRearWheel
+    13700010: RearAxel1
+    13700012: RightFrontWheel
+    13700014: RightRearWheel
+    13700016: Turrent
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
