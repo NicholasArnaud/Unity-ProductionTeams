@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 723548247302b724581a0c1a2356b93e
-timeCreated: 1497563195
+guid: b732c838dbe9d9b40ad70b648442349e
+timeCreated: 1497566241
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -8,61 +8,55 @@ ModelImporter:
     100000: BackAxelMesh
     100002: BodyMesh
     100004: CannonMesh
-    100006: HatMesh
-    100008: L_BackWheelMesh
-    100010: L_EarMesh
-    100012: L_EyeMesh
-    100014: L_FrontWheelMesh
-    100016: L_MirrorMesh
-    100018: MustacheMesh
-    100020: NoseMesh
-    100022: PotatoBodyMesh
-    100024: //RootNode
-    100026: PotatoVehicleMesh
-    100028: R_BackWheelMesh
-    100030: R_EarMesh
-    100032: R_EyeMesh
-    100034: R_FrontWheelMesh
-    100036: R_Mirror
-    100038: TopAxelMesh
-    100040: transform1
-    100042: TurretMesh
-    100044: VeichleRig_Chasis_AuxSHJnt
-    100046: VeichleRig_l_FrontWheels_AuxSHJnt
-    100048: VeichleRig_l_RearWheels_AuxSHJnt
-    100050: VeichleRig_r_FrontWheels_AuxSHJnt
-    100052: VeichleRig_r_RearWheels_AuxSHJnt
-    100054: VeichleRig_ROOTSHJnt
-    100056: VeichleRig_SHJntGrp
+    100006: //RootNode
+    100008: HatMesh
+    100010: L_BackWheelMesh
+    100012: L_EarMesh
+    100014: L_EyeMesh
+    100016: L_FrontWheelMesh
+    100018: L_MirrorMesh
+    100020: MustacheMesh
+    100022: NoseMesh
+    100024: PotatoBodyMesh
+    100026: R_BackWheelMesh
+    100028: R_EarMesh
+    100030: R_EyeMesh
+    100032: R_FrontWheelMesh
+    100034: R_Mirror
+    100036: TopAxelMesh
+    100038: TurretMesh
+    100040: VeichleRig_Chasis_AuxSHJnt
+    100042: VeichleRig_l_FrontWheels_AuxSHJnt
+    100044: VeichleRig_l_RearWheels_AuxSHJnt
+    100046: VeichleRig_r_FrontWheels_AuxSHJnt
+    100048: VeichleRig_r_RearWheels_AuxSHJnt
+    100050: VeichleRig_ROOTSHJnt
     400000: BackAxelMesh
     400002: BodyMesh
     400004: CannonMesh
-    400006: HatMesh
-    400008: L_BackWheelMesh
-    400010: L_EarMesh
-    400012: L_EyeMesh
-    400014: L_FrontWheelMesh
-    400016: L_MirrorMesh
-    400018: MustacheMesh
-    400020: NoseMesh
-    400022: PotatoBodyMesh
-    400024: //RootNode
-    400026: PotatoVehicleMesh
-    400028: R_BackWheelMesh
-    400030: R_EarMesh
-    400032: R_EyeMesh
-    400034: R_FrontWheelMesh
-    400036: R_Mirror
-    400038: TopAxelMesh
-    400040: transform1
-    400042: TurretMesh
-    400044: VeichleRig_Chasis_AuxSHJnt
-    400046: VeichleRig_l_FrontWheels_AuxSHJnt
-    400048: VeichleRig_l_RearWheels_AuxSHJnt
-    400050: VeichleRig_r_FrontWheels_AuxSHJnt
-    400052: VeichleRig_r_RearWheels_AuxSHJnt
-    400054: VeichleRig_ROOTSHJnt
-    400056: VeichleRig_SHJntGrp
+    400006: //RootNode
+    400008: HatMesh
+    400010: L_BackWheelMesh
+    400012: L_EarMesh
+    400014: L_EyeMesh
+    400016: L_FrontWheelMesh
+    400018: L_MirrorMesh
+    400020: MustacheMesh
+    400022: NoseMesh
+    400024: PotatoBodyMesh
+    400026: R_BackWheelMesh
+    400028: R_EarMesh
+    400030: R_EyeMesh
+    400032: R_FrontWheelMesh
+    400034: R_Mirror
+    400036: TopAxelMesh
+    400038: TurretMesh
+    400040: VeichleRig_Chasis_AuxSHJnt
+    400042: VeichleRig_l_FrontWheels_AuxSHJnt
+    400044: VeichleRig_l_RearWheels_AuxSHJnt
+    400046: VeichleRig_r_FrontWheels_AuxSHJnt
+    400048: VeichleRig_r_RearWheels_AuxSHJnt
+    400050: VeichleRig_ROOTSHJnt
     4300000: BodyMesh
     4300002: R_FrontWheelMesh
     4300004: L_FrontWheelMesh
@@ -82,8 +76,7 @@ ModelImporter:
     4300032: L_EarMesh
     4300034: L_EyeMesh
     4300036: R_Mirror
-    7400000: Take 001
-    7400002: Death
+    7400000: Death
     9500000: //RootNode
     13700000: BackAxelMesh
     13700002: BodyMesh
@@ -167,8 +160,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: a9953ffea269ebb4c8f3a21388ad14be,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
