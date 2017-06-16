@@ -9701,20 +9701,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2104223497}
   m_Script: {fileID: 11500000, guid: 4a4a412d5b5613c46a781ddb940036fe, type: 3}
---- !u!114 &2104223504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2104223498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79ae08a968921494d97c6b4a7bd9b58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LoseMenu: {fileID: 0}
-  TextHealth: {fileID: 0}
-  CurrentHealth: 0
 --- !u!1001 &2144695921
 Prefab:
   m_ObjectHideFlags: 0

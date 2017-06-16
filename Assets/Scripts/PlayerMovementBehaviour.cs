@@ -59,7 +59,26 @@ public class PlayerMovementBehaviour : MonoBehaviour
             animator.SetBool("Forward", false);
             animator.SetBool("Reverse", true);
         }
-            
+        
+        if(Input.GetKey(KeyCode.A))
+        {
+            animator.SetBool("RightTurn", false);
+            animator.SetBool("LeftTurn", true);
+        }          
+
+        if(Input.GetKey(KeyCode.D))
+        {
+            animator.SetBool("LeftTurn", false);
+            animator.SetBool("RightTurn", true);
+        }
+
+        if(!Input.GetKeyDown(KeyCode.A) && !Input.GetKeyDown(KeyCode.D) && !Input.GetKeyDown(KeyCode.W) && Input.GetKeyDown(KeyCode.S))
+        {
+            animator.SetBool("Reverse", false);
+            animator.SetBool("Forward", false);
+            animator.SetBool("LeftTurn", false);
+            animator.SetBool("RightTurn", false);
+        }
 
         foreach (var wheel in m_Wheels)
         {
