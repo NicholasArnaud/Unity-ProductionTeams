@@ -76,6 +76,11 @@ public class PlayerStats : MonoBehaviour
 
     }
 
+    public void ResetTime()
+    {
+        Time.timeScale = 1.0f;
+    }
+
     void Update()
     {
 
@@ -94,11 +99,18 @@ public class PlayerStats : MonoBehaviour
         if (IsDead == true)
         {
             if (animationDone())
-            {
-                Time.timeScale = 0.0f;
+            { 
                 LoseMenu.SetActive(true);
             }
+            
         }
+
+        if (LoseMenu.active == true)
+        {
+            Time.timeScale = 0.0f;
+        }
+        else
+            Time.timeScale = 1.0f;
 
         TextHealth.text = "Player Health : " + CurrentHealth;
     }
