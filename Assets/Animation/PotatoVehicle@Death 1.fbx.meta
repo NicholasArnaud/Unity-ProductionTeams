@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: d7f3e2054b7b5e84489557f5c7c9ed2a
-timeCreated: 1496434167
+guid: 5e29c0d303d24eb4a8c77fc87888b1aa
+timeCreated: 1497622689
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -33,6 +33,7 @@ ModelImporter:
     100050: VeichleRig_r_FrontWheels_AuxSHJnt
     100052: VeichleRig_r_RearWheels_AuxSHJnt
     100054: VeichleRig_ROOTSHJnt
+    100056: VeichleRig_SHJntGrp
     400000: BackAxelMesh
     400002: BodyMesh
     400004: CannonMesh
@@ -61,6 +62,7 @@ ModelImporter:
     400050: VeichleRig_r_FrontWheels_AuxSHJnt
     400052: VeichleRig_r_RearWheels_AuxSHJnt
     400054: VeichleRig_ROOTSHJnt
+    400056: VeichleRig_SHJntGrp
     4300000: BodyMesh
     4300002: R_FrontWheelMesh
     4300004: L_FrontWheelMesh
@@ -80,7 +82,7 @@ ModelImporter:
     4300032: L_EarMesh
     4300034: L_EyeMesh
     4300036: R_Mirror
-    7400000: ForwardDrive
+    7400000: Take 001
     9500000: //RootNode
     13700000: BackAxelMesh
     13700002: BodyMesh
@@ -102,7 +104,7 @@ ModelImporter:
     13700034: TopAxelMesh
     13700036: TurretMesh
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:
@@ -123,91 +125,7 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: ForwardDrive
-      takeName: Take 001
-      firstFrame: 1
-      lastFrame: 23
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: PotatoVehicleMesh
-        weight: 1
-      - path: PotatoVehicleMesh/BackAxelMesh
-        weight: 1
-      - path: PotatoVehicleMesh/BodyMesh
-        weight: 1
-      - path: PotatoVehicleMesh/CannonMesh
-        weight: 1
-      - path: PotatoVehicleMesh/HatMesh
-        weight: 1
-      - path: PotatoVehicleMesh/L_BackWheelMesh
-        weight: 1
-      - path: PotatoVehicleMesh/L_EarMesh
-        weight: 1
-      - path: PotatoVehicleMesh/L_EyeMesh
-        weight: 1
-      - path: PotatoVehicleMesh/L_FrontWheelMesh
-        weight: 1
-      - path: PotatoVehicleMesh/L_MirrorMesh
-        weight: 1
-      - path: PotatoVehicleMesh/MustacheMesh
-        weight: 1
-      - path: PotatoVehicleMesh/NoseMesh
-        weight: 1
-      - path: PotatoVehicleMesh/PotatoBodyMesh
-        weight: 1
-      - path: PotatoVehicleMesh/R_BackWheelMesh
-        weight: 1
-      - path: PotatoVehicleMesh/R_EarMesh
-        weight: 1
-      - path: PotatoVehicleMesh/R_EyeMesh
-        weight: 1
-      - path: PotatoVehicleMesh/R_FrontWheelMesh
-        weight: 1
-      - path: PotatoVehicleMesh/R_Mirror
-        weight: 1
-      - path: PotatoVehicleMesh/TopAxelMesh
-        weight: 1
-      - path: PotatoVehicleMesh/transform1
-        weight: 1
-      - path: PotatoVehicleMesh/TurretMesh
-        weight: 1
-      - path: VeichleRig_ROOTSHJnt
-        weight: 1
-      - path: VeichleRig_ROOTSHJnt/VeichleRig_Chasis_AuxSHJnt
-        weight: 1
-      - path: VeichleRig_ROOTSHJnt/VeichleRig_l_FrontWheels_AuxSHJnt
-        weight: 1
-      - path: VeichleRig_ROOTSHJnt/VeichleRig_l_RearWheels_AuxSHJnt
-        weight: 1
-      - path: VeichleRig_ROOTSHJnt/VeichleRig_r_FrontWheels_AuxSHJnt
-        weight: 1
-      - path: VeichleRig_ROOTSHJnt/VeichleRig_r_RearWheels_AuxSHJnt
-        weight: 1
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
